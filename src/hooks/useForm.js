@@ -10,6 +10,8 @@ export const useForm = (rules, initialValue = {}) => {
     const [values, setValues] = useState(initialValue)
     const [errors, setError] = useState({})
 
+
+    console.log('values', values)
     const register = (name) => {
         return {
             error: errors[name],
